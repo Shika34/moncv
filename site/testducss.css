@@ -1,0 +1,62 @@
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  border: 10px solid black;
+  
+    margin: 20px 0 40px 0;
+    box-shadow: 10px 5px 5px green;
+     height: 5em;
+  width: auto;
+  background:
+    repeating-linear-gradient(
+      190deg,
+      rgba(255, 0, 0, 0.5) 40px,
+      rgba(255, 153, 0, 0.5) 80px,
+      rgba(255, 255, 0, 0.5) 120px,
+      rgba(0, 255, 0, 0.5) 160px,
+      rgba(0, 0, 255, 0.5) 200px,
+      rgba(75, 0, 130, 0.5) 240px,
+      rgba(238, 130, 238, 0.5) 280px,
+      rgba(255, 0, 0, 0.5) 300px
+    ),
+    repeating-linear-gradient(
+      -190deg,
+      rgba(255, 0, 0, 0.5) 30px,
+      rgba(255, 153, 0, 0.5) 60px,
+      rgba(255, 255, 0, 0.5) 90px,
+      rgba(0, 255, 0, 0.5) 120px,
+      rgba(0, 0, 255, 0.5) 150px,
+      rgba(75, 0, 130, 0.5) 180px,
+      rgba(238, 130, 238, 0.5) 210px,
+      rgba(255, 0, 0, 0.5) 230px
+    ),
+    repeating-linear-gradient(
+      23deg,
+      red 50px,
+      orange 100px,
+      yellow 150px,
+      green 200px,
+      blue 250px,
+      indigo 300px,
+      violet 350px,
+      red 370px
+    );
+
+    
+  width: 400px;
+  height: 200px;
+ 
+  color: black;
+  border-radius: 1em;
+  padding: 1em;
+    display: flex;
+  align-items: flex-start;
+display: grid;
+  width: 540px;
+  grid-template-columns: 120px 120px 120px;
+  align-items: start;
+  justify-content: center; 
+}

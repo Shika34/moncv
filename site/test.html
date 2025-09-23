@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mon CV</title>
+  <meta name="description" content="Mon cv version html CSS avec le framework Bulma" />
+
+  <!-- Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <section class="columns container has-text-centered has-background-info-dark is-mobile is-centered">
+      <div class="column is-1">
+        <figure class="image is-128x128">
+          <img class="is-rounded" src="identite_cv.jpg" />
+        </figure>
+      </div>
+      <div class="column column is-three-fifths mt-3">
+        <p class="title is-1 has-text-white-ter">MARCHICA MICHEL</p>
+        <p class="subtitle is-3 has-text-grey-lighter">Développeur Web</p>
+      </div>
+    </section>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="columns box is-shadowless">
+        <!-- Colonne gauche -->
+        <div class="column is-one-quarter has-background-info-light p-5">
+          <p class="title is-4 has-text-info-dark mt-5">
+            <i class="fas fa-address-book"></i> CONTACT
+          </p>
+          <p><i class="fas fa-phone-alt"></i> 06 48 00 37 46</p>
+          <p>
+            <i class="fas fa-envelope"></i>
+            <a href="#" id="toggle-form" class="has-text-info-dark has-text-weight-semibold">
+              Formulaire de contact
+            </a>
+          </p>
+          <p><i class="fas fa-map-marker-alt"></i> ST THIBERY, France</p>
+          <p><i class="fas fa-birthday-cake"></i> 03/01/1986</p>
+
+          <p class="title is-4 mt-5">
+            <i class="fas fa-language"></i> LANGUES
+          </p>
+          Français: courant <br />
+          Anglais: technique
+          <p class="title is-4 mt-5">
+            <i class="fas fa-tools"></i> COMPÉTENCES
+          </p>
+          <ul>
+            <li>Autonomie</li>
+            <li>Polyvalence</li>
+            <li>Capacité d’adaptation</li>
+            <li>Logique</li>
+            <li>Rigueur</li>
+          </ul>
+          <p class="title is-4 mt-5">
+            <i class="fas fa-heart"></i> CENTRES D'INTÉRÊT
+          </p>
+          <ul>
+            <li>Informatique</li>
+            <li>Sciences</li>
+            <li>Voyages</li>
+            <li>Lecture</li>
+            <li>Jeux vidéo</li>
+          </ul>
+        </div>
+
+        <!-- Colonne droite -->
+        <div class="column box p-5">
+          <p class="title is-4"><i class="fas fa-user"></i> PROFIL</p>
+          <p>
+            Diplômé en informatique, 5 ans d’expérience comme technicien
+            informatique à domicile. Passionné, sens du relationnel, motivé à
+            mettre ces qualités au service de votre entreprise. En formation
+            de développeur web/web mobile du 08 septembre 2025 au 05 juin
+            2026.
+          </p>
+          <p class="title is-4 mt-4">
+            <i class="fas fa-briefcase"></i> EXPÉRIENCES PROFESSIONNELLES
+          </p>
+          <p class="is-size-5 mt-4">Technicien Informatique à domicile</p>
+          <p class="is-size-6">
+            Auto entrepreneur. Forme Informatique, Florensac | 2013 – 2017
+          </p>
+          <ul class="has-text-grey">
+            <li>Installation et maintenance informatique.</li>
+            <li>Gestion de réseaux.</li>
+            <li>Dépannage matériel.</li>
+            <li>Après-vente et logistique.</li>
+          </ul>
+          <p class="is-size-5 mt-4">Opérateur de ligne</p>
+          <p class="is-size-6 mt-1">
+            SBM Formulation, Béziers | 2016 – Aujourd’hui
+          </p>
+          <p class="has-text-grey">
+            Fabrication et conditionnement de produits phytosanitaires.
+          </p>
+          <p class="is-size-5 mt-4">Employé commercial</p>
+          <p>Carrefour Market Marseillan | 2011 – 2013</p>
+          <p class="is-size-5 mt-4">Employé polyvalent</p>
+          <p>Mcdonald’s Agde | 2007 – 2010</p>
+          <p class="title is-4 mt-5">
+            <i class="fas fa-graduation-cap"></i> FORMATION
+          </p>
+          <p class="is-size-5 mt-4">Bac Pro Informatique et réseaux</p>
+          <p class="is-size-6">Jean Moulin, Béziers | 2004 - 2006</p>
+          <p class="is-size-5 mt-4">BEP Métiers de l’électronique</p>
+          <p class="is-size-6">Jean Moulin, Béziers | 2002 - 2004</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer style="display:none;" id="contact-form-footer" class="section has-background-light">
+    <div class="container">
+      <h2 class="title has-text-info-dark has-text-centered mb-6">Formulaire de contact</h2>
+      <form action="mailto:mmarchica@gmail.com" method="POST" enctype="text/plain" class="box">
+        <div class="field">
+          <label class="label">Nom</label>
+          <div class="control">
+            <input class="input" type="text" name="Nom" placeholder="Votre nom" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Prénom</label>
+          <div class="control">
+            <input class="input" type="text" name="Prenom" placeholder="Votre prénom" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control has-icons-left">
+            <input class="input" type="email" name="Email" placeholder="Votre email" required />
+            <span class="icon is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Message</label>
+          <div class="control">
+            <textarea class="textarea" name="Message" placeholder="Votre message" required></textarea>
+          </div>
+        </div>
+
+        <div class="field is-grouped is-justify-content-center mt-5">
+          <div class="control">
+            <button type="submit" class="button is-link">Envoyer</button>
+          </div>
+          <div class="control">
+            <button type="reset" class="button is-link is-light">Annuler</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </footer>
+
+<script>
+  document.getElementById('toggle-form').addEventListener('click', function(event) {
+    event.preventDefault();
+    var footer = document.getElementById('contact-form-footer');
+    if (footer.style.display === 'none' || footer.style.display === '') {
+      footer.style.display = 'block';
+      footer.scrollIntoView({behavior: 'smooth'});
+    } else {
+      footer.style.display = 'none';
+    }
+  });
+</script>
+
+</body>
+</html>
